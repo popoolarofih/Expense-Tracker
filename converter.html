@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="converter.css">
+  <title>Converter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="currency">
+      <select name="" id="from_currency">
+        <option value="usd" selected >USD</option>
+        <option value="eur">EUR</option>
+        <option value="inr">INR</option>
+        <option value="kpw">KPW</option>
+        <option value="nzd">NZD</option>
+        <option value="ngn">NGN</option>
+        <option value="gbp">GBP</option>
+        <option value="try">TRY</option>
+        <option value="chf">CHF</option>
+        <option value="zar">ZAR</option>
+      </select>
+      <input type="number" name="" id="from_amount" placeholder="00000"  />
+    </div>
+    <div class="middle">
+      <button type="button" id="exchange">exchange</button>
+      <div class="rate" id="rate"></div>
+    </div>
+    <div class="currency">
+      <select name="" id="to_currency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="inr">INR</option>
+        <option value="kpw">KPW</option>
+        <option value="nzd">NZD</option>
+        <option value="ngn" selected>NGN</option>
+        <option value="gbp">GBP</option>
+        <option value="try">TRY</option>
+        <option value="chf">CHF</option>
+        <option value="zar">ZAR</option>
+      </select>
+      <input type="text" name="" id="to_amount" placeholder="00000" />
+    </div>
+  </div>
+</body>
+<script src="converter.js"></script>
+</html>
